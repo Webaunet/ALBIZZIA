@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact et devis | Albizzia, paysagiste à Angerville</title>
+<meta name="description" content="Contactez Albizzia, paysagiste à Angerville (91) : formulaire de demande de devis, téléphone 06 24 36 33 76 et e-mail.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="https://webaunet.github.io/ALBIZZIA/" aria-label="Albizzia Paysage, accueil"><i></i>Albizzia <small>Paysage</small></a>
+    <nav id="menu" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a href="prestations.html">Prestations</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="economie-impots.html">Économie d'impôts</a></li><li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+    <a class="btn call" href="tel:+33624363376" aria-label="Appeler le 06 24 36 33 76"><span>06 24 36 33 76</span><i class="ph" aria-hidden="true"></i></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+  </div>
+</header>
+<main id="contenu">
+
+  <section class="ph-hero">
+    <div class="wrap cols">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h1>Parlons de votre jardin</h1>
+        <p>Remplissez le formulaire : vous obtenez un message prêt à envoyer par SMS ou par e-mail. Vous pouvez aussi nous appeler.</p>
+      </div>
+      <div><img class="solo" src="img/tonte-volets.webp" width="900" height="502" alt="Jardinier tondant une pelouse devant une maison à volets bleus"></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap formwrap">
+      <div>
+        <form id="contact-form" novalidate>
+          <div class="f2">
+            <div><label for="nom">Nom <span class="req">*</span></label><input id="nom" name="nom" autocomplete="name" aria-describedby="err-nom"><p class="err" id="err-nom" aria-live="polite"></p></div>
+            <div><label for="tel">Téléphone <span class="req">*</span></label><input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="err-tel"><p class="err" id="err-tel" aria-live="polite"></p></div>
+          </div>
+          <div class="f2">
+            <div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="err-email"><p class="err" id="err-email" aria-live="polite"></p></div>
+            <div><label for="commune">Commune du chantier <span class="req">*</span></label><input id="commune" name="commune" aria-describedby="err-commune"><p class="err" id="err-commune" aria-live="polite"></p></div>
+          </div>
+          <div><label for="prestation">Prestation <span class="req">*</span></label>
+            <select id="prestation" name="prestation" aria-describedby="err-prestation"><option value="">Choisir…</option><option>Création et aménagement extérieur</option><option>Entretien de jardins et espaces verts</option><option>Élagage et abattage</option><option>Dessouchage</option><option>Aménagement intérieur, terrasses et balcons</option><option>Autre demande</option></select><p class="err" id="err-prestation" aria-live="polite"></p></div>
+          <div><label for="message">Votre projet <span class="req">*</span></label><textarea id="message" name="message" aria-describedby="err-message"></textarea><p class="err" id="err-message" aria-live="polite"></p></div>
+          <div><button class="btn" type="submit">Préparer mon message</button></div>
+        </form>
+        <section class="recap" id="recap" hidden aria-labelledby="recap-title" style="margin-top:24px">
+          <h2 id="recap-title" tabindex="-1" style="font-size:26px">Votre message est prêt</h2>
+          <pre id="recap-text"></pre>
+          <div class="actions"><a class="btn" id="recap-sms" href="sms:+33624363376">Envoyer par SMS</a><button class="btn ghost" id="recap-copy" type="button">Copier</button><a class="btn ghost" href="tel:+33624363376">Appeler</a><a class="btn ghost" id="recap-mail" href="mailto:contact@albizzia-paysage.com">Envoyer par e-mail</a></div>
+          <p class="ok" style="color:var(--onDeepMuted);font-weight:400;font-size:15px">Ce site ne transmet rien automatiquement : le message part depuis votre téléphone ou votre messagerie.</p>
+        </section>
+      </div>
+      <aside class="side">
+        <dl class="coords" style="margin:0">
+          <div><dt>Téléphone</dt><dd><a href="tel:+33624363376">06 24 36 33 76</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:contact@albizzia-paysage.com">contact@albizzia-paysage.com</a></dd></div>
+          <div><dt>Commune</dt><dd>Angerville (91)</dd></div>
+          <div><dt>Zone d'intervention</dt><dd>Île-de-France</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <b>Albizzia Paysage</b>
+    <span>Angerville (91) · <a href="tel:+33624363376">06 24 36 33 76</a> · <a href="mailto:contact@albizzia-paysage.com">contact@albizzia-paysage.com</a></span>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
