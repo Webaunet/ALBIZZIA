@@ -236,3 +236,8 @@ input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{b
 @media(min-width:761px){.ph-hero,.cta{min-height:calc(100svh - 68px);display:flex;align-items:center}.ph-hero>.wrap,.cta>.wrap{width:100%}}
 [hidden]{display:none!important}
 .burger{flex:none}.call{flex:none}
+.logo{min-height:44px;min-width:0}
+@media(max-width:560px){.bar{gap:10px}.logo{font-size:21px}.logo small{display:none}.call{padding:0 14px}}
+@media(max-width:360px){.logo{font-size:19px;gap:6px}.call{padding:0 10px;font-size:14px}}
+nav a,nav .soon{white-space:nowrap}
+@media(min-width:981px) and (max-width:1200px){.logo small{display:none}nav ul{gap:0}nav a{padding:10px 8px;font-size:14px}.bar{gap:14px}.call{padding:0 14px;font-size:14px}}
